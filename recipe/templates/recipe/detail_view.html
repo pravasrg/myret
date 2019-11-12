@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'recipe/style.css' %}">
+    <title>MyResturant</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="leftmenu">
+            <h3>MyResturant</h3>
+        </div>
+        <div class="rightmenu">
+            <ul>
+                <a href="#"><li>HOME</li></a>
+                <a href="#"><li>ORDERS</li></a>
+                <a href="#"><li id="firstlist">KITCHEN</li></a>
+                <a href="#"><li>STAFF MANAGEMENT</li></a>
+            </ul>
+        </div>
+    </div>
+    <a href="../"><button class = "back"><h3> << BACK TO MENU</h3></button></a>
+    <div class="item_table">
+        
+        <table >
+            <tr>
+              <th>STEP NO</th>
+              <th>PROCESS STEPS</th>
+              <th>ASSIGNED TO</th>
+              <th>SCHEDULEED TIME</th>
+            </tr>
+            {% for method in process %}
+            <tr>
+              <td>{{method.id}}</td>
+              <td>{{method.process_step}}</td>
+              <td>{{method.assigned}}</td>
+              <td>{{method.schedule}}</td>
+            </tr>
+            {% endfor %}
+    </div>
+</body>
+</html>

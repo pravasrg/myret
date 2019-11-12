@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'recipe/style.css' %}">
+    <title>MyResturant</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="leftmenu">
+            <h3>MyResturant</h3>
+        </div>
+        <div class="rightmenu">
+            <ul>
+                <a href="#"><li>HOME</li></a>
+                <a href="#"><li>ORDERS</li></a>
+                <a href="#"><li id="firstlist">KITCHEN</li></a>
+                <a href="#"><li>STAFF MANAGEMENT</li></a>
+            </ul>
+        </div>
+    </div>
+    <div>
+            <div class="menu_table">
+                    <h1 class = "heading">ALL DISHES</h1>
+                    {% for dish in item_name %}
+                        <a href="{{ dish.item_name }}"><button class = "dish_type"><h2>{{ dish.item_name | upper}}</h2></button></a>
+                    {% endfor %}
+            </div>
+
+    </div>
+
+
+
+</body>
+</html>

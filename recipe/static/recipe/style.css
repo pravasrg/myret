@@ -1,0 +1,118 @@
+
+body{
+  background: yellow;
+}
+.item_table{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 300px;
+  background-color: rgb(0, 252, 13);  
+}
+
+.menu_table{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 230px;
+  
+}
+.dish_type {
+  background-color: rgb(0, 252, 13);
+  border: 2px;
+  border-radius: 15%;
+  width: 20px 20px;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin: 17px 17px 17px 17px;
+}
+  
+.dish_type:hover {
+  background-color: rgb(0, 107, 18);
+  color: aqua;
+}
+h2{
+  font-size: 16px;
+}
+
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Montserrat',sans-serif;
+}
+.menu{
+  width: 100%;
+  height: 80px;
+  background-color: rgba(5, 32, 59, 0.705);
+}
+.heading{
+  margin-left: 15px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.leftmenu{
+  width: 25%;
+  line-height: 80px;
+  float: left;
+}
+.leftmenu h3{
+  padding-left: 50px;
+  font-weight: bold;
+  color: orangered;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.rightmenu{
+  width: 75%;
+  height: 100px;
+  float: right;
+}
+.rightmenu ul{
+  margin-left: 350px;
+}
+.rightmenu ul li{
+  font-family: 'Montserrat',sans-serif;
+  display: inline-block;
+  list-style: none;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  line-height: 80px;
+  margin-left: 50px;
+}
+#firstlist{
+  color: orange;
+}
+.rightmenu ul li:hover{
+  color: orange;
+}
+.side{
+  background: rgba(219, 219, 219, 0.774);
+  margin-top: 5px;
+}
+.side td{
+  border-bottom: 1px;
+}
+
+.back{
+  color: aqua;
+  font-size: 12px;
+  border: 1px;
+  border-radius: 5%;
+  background: blue;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 300px;
+  padding: 10px;
+}
+.back:hover{
+  background: #000;
+}
